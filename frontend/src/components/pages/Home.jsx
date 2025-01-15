@@ -3,13 +3,15 @@ import React from 'react'
 // Resources
 import navbarLogo from '../images/algarson_whitetext_NoBG.png'
 import landpageProfile from '../images/algarson_photo-removebg-preview.png'
-import jsicon from '../images/icons/js.png'
-import pythonicon from '../images/icons/python.png'
-import htmlicon from '../images/icons/html-5.png'
-import cssicon from '../images/icons/css-3.png'
-import mysqlicon from '../images/icons/database.png'
-import reactjsicon from '../images/icons/reactjs.png'
-import firebaseicon from '../images/icons/firebase.png'
+import jsicon from '../icons/js.png'
+import pythonicon from '../icons/python.png'
+import htmlicon from '../icons/html-5.png'
+import cssicon from '../icons/css-3.png'
+import mysqlicon from '../icons/database.png'
+import reactjsicon from '../icons/reactjs.png'
+import firebaseicon from '../icons/firebase.png'
+// Project Images
+import kapelogin from '../images/LoginKCProject.png'
 
 // Navigations
 import './Home.css'
@@ -58,7 +60,23 @@ const Home = () => {
                 <h2>PROJECTS</h2>
               <div className="project-content">
                 <div className="project-card-container">
-                  <div className="project-cards">1</div>
+                  <div className="project-cards">
+                    <div className="proj-image item1">
+                      <img src={kapelogin} alt="KCloginimage" />
+                    </div>
+                    <div className="proj-image item2">
+                      <img src={kapelogin} alt="KCloginimage" />
+                    </div>
+                    <div className="proj-image item3">
+                      <img src={kapelogin} alt="KCloginimage" />
+                    </div>
+                    <div className="proj-desc">
+                      <p>Development of Point of Sale using QR code with Inventory system for <span>Kape Cinco</span></p>
+                    </div>
+                    <div className="card-btn">
+                      <button>View</button>
+                    </div>
+                  </div>
                   <div className="project-cards">2</div>
                   <div className="project-cards">3</div>
                   <div className="project-cards">4</div>
