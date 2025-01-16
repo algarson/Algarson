@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
 
 // Resources
 import navbarLogo from '../images/algarson_whitetext_NoBG.png'
@@ -14,6 +16,7 @@ import figmaicon from '../icons/figmaicon.png'
 import formicon from '../images/formicon.png'
 import githubicon from '../images/github.png'
 import linkedinicon from '../images/linkedin.png'
+import kcQR from '../images/kcQR.jpg'
 // Project Images
 import kapelogin from '../images/LoginKCProject.png'
 import kapeMenu from '../images/MenuKCProject.jpg'
@@ -30,6 +33,46 @@ import kibogallery from '../images/kiboGallery.png'
 import './Home.css'
 
 const Home = () => {
+  const [isQrModalOepn, setIsQrModalOpen] = useState(false);
+
+  const openQrModal = () => {
+    setIsQrModalOpen(true);
+  }
+
+  const closeQrModal = () => {
+    setIsQrModalOpen(false);
+  }
+
+  const [formData, setFormData] = useState({
+    fname: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent form from refreshing the page
+    emailjs
+      .send(
+        'service_1f84a4f', // Replace with your EmailJS service ID
+        'template_db566cg', // Replace with your EmailJS template ID
+        formData,           // The form data object
+        'Smnr6dIQZtV4EQZkf'      // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          toast.success("Your message has been sent successfully!"); // Toast notification
+          setFormData({ fname: '', email: '', message: '' }); // Clear form
+        },
+        (error) => {
+          toast.error('Error sending email:', error);
+        }
+      );
+  };
+
 
   useEffect(() => {
     const sliders = document.querySelectorAll('.proj-image-slider');
@@ -174,11 +217,23 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="proj-btn">
-                        <button className='qr-btn'>
+                        <button className='qr-btn' onClick={openQrModal}>
                           <span class="material-symbols-outlined">qr_code</span>
                         </button>
-                        <button className='btn'>View</button>
+                        <a className='btn' href='https://kapecinco.horsemendevs.com/' target='_blank' rel='noreferrer'>View</a>
                       </div>
+                            {/* Modal */}
+                          {isQrModalOepn && (
+                            <div className="modal-overlay" onClick={closeQrModal}>
+                              <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                                <img
+                                  src={kcQR} // Replace with your image URL
+                                  alt="QR Code"
+                                  className="modal-image"
+                                />
+                              </div>
+                            </div>
+                          )}
                     </div>
                   </div>
                   <div className="project-cards">
@@ -209,7 +264,7 @@ const Home = () => {
                         <div className="proj-status">
                           <p>In Progress</p>
                         </div>
-                        <button className='btn'>View</button>
+                        <a className='btn' href='https://tm.horsemendevs.com/' target='_blank' rel='noreferrer'>View</a>
                       </div>
                     </div>
                   </div>
@@ -261,16 +316,37 @@ const Home = () => {
                         <div className="form-header">
                           <h3>Got a question, an idea, or just want to say Hi? Let’s connect!</h3>
                         </div>
-                        <form className='form'>
+                        <form className='form' onSubmit={handleSubmit}>
                             <div className="form-group">
                               <label htmlFor="user">Full Name</label>
-                              <input type="text" id='fname' name='fname' placeholder='Enter your Full Name' required />
+                              <input
+                                type="text"
+                                id='fname'
+                                name='fname'
+                                placeholder='Enter your Full Name'
+                                value={formData.fname}
+                                onChange={handleChange}
+                                required />
 
                               <label htmlFor="user">Email</label>
-                              <input type="email" id='email' name='email' placeholder='Enter your Email' required />
+                              <input
+                                type="email"
+                                id='email'
+                                name='email'
+                                placeholder='Enter your Email'
+                                value={formData.email}
+                                onChange={handleChange}
+                                required />
 
                               <label htmlFor="message">Message</label>
-                              <textarea name="message" id="message" className='message-input' placeholder='Enter your Message' required></textarea>
+                              <textarea
+                                name="message"
+                                id="message"
+                                className='message-input'
+                                placeholder='Enter your Message'
+                                value={formData.message}
+                                onChange={handleChange}
+                                required></textarea>
                             </div>
                               <div className="submit-button">
                                 <button>Submit</button>
@@ -299,7 +375,7 @@ const Home = () => {
                 </footer>
             </div>
         </section>
-    
+        <ToastContainer />
     </div>
   )
 }
