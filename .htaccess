@@ -1,3 +1,7 @@
+<Directory "/public_html/algarson/frontend/build">
+    Require all granted
+</Directory>
+
 # Set default index file
 DirectoryIndex index.html
 
