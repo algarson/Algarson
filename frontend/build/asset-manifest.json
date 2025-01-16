@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.167cb98a.css",
+    "main.js": "/static/js/main.a9debd91.js",
+    "static/js/488.e75445ad.chunk.js": "/static/js/488.e75445ad.chunk.js",
+    "static/media/MenuKCProject.jpg": "/static/media/MenuKCProject.e8d8a09e9c9de9e820c9.jpg",
+    "static/media/kiboHome.png": "/static/media/kiboHome.5c05f8f6520380fcfdd4.png",
+    "static/media/kiboGallery.png": "/static/media/kiboGallery.b29d3049de7af8228721.png",
+    "static/media/kiboServices.png": "/static/media/kiboServices.60e86916c3c03e23a599.png",
+    "static/media/formicon.png": "/static/media/formicon.c79b078564c2be3a0fe0.png",
+    "static/media/firebase.png": "/static/media/firebase.5aa7cf22cd45ec6bbec2.png",
+    "static/media/LoginKCProject.png": "/static/media/LoginKCProject.e530b6dfabf9f4a14dc6.png",
+    "static/media/tmLogin.png": "/static/media/tmLogin.263cdaacba3cb451ab46.png",
+    "static/media/algarson_photo-removebg-preview.png": "/static/media/algarson_photo-removebg-preview.c4cd2aa0f229659d81de.png",
+    "static/media/adminKC.png": "/static/media/adminKC.090736e2ebce4f932e52.png",
+    "static/media/kcQR.jpg": "/static/media/kcQR.f387c31238fff6e2ae15.jpg",
+    "static/media/algarson_whitetext_NoBG.png": "/static/media/algarson_whitetext_NoBG.efa11ea65cdc67d48b0d.png",
+    "static/media/tmHome.png": "/static/media/tmHome.456318e53f48d4f33f96.png",
+    "static/media/tmDevice.jpg": "/static/media/tmDevice.f1af986b601b1fc3a17a.jpg",
+    "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/reactjs.png": "/static/media/reactjs.07d9e407d4e491c548d5.png",
+    "static/media/database.png": "/static/media/database.509b797c225dcdf62e68.png",
+    "static/media/github.png": "/static/media/github.2daf8617f4b92d421da4.png",
+    "static/media/figmaicon.png": "/static/media/figmaicon.72fbc535ebe253a5dbc4.png",
+    "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/index.html",
+    "main.167cb98a.css.map": "/static/css/main.167cb98a.css.map",
+    "main.a9debd91.js.map": "/static/js/main.a9debd91.js.map",
+    "488.e75445ad.chunk.js.map": "/static/js/488.e75445ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.167cb98a.css",
+    "static/js/main.a9debd91.js"
+  ]
+}
