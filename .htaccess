@@ -1,0 +1,14 @@
+# Set default index file
+DirectoryIndex /frontend/build/index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Use the base directory (adjust if necessary)
+    RewriteBase /frontend/build
+    # Ignore direct access to index.html
+    RewriteRule ^index\.html$ - [L]
+    # Redirect all requests to index.html if file/directory not found
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
