@@ -1,17 +1,11 @@
-<Directory "/public_html/algarson/frontend/build">
-    Require all granted
-</Directory>
-
 # Set default index file
 DirectoryIndex index.html
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    # Base directory of your app
     RewriteBase /algarson/frontend/build/
     
-    # Redirect all non-existent files/directories to index.html
-    RewriteRule ^index\.html$ - [L]
+    # Redirect all requests to React's index.html
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . /index.html [L]
