@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/algarson/frontend/build/static/css/main.167cb98a.css",
+    "main.js": "/algarson/frontend/build/static/js/main.8fe4b7b7.js",
+    "static/js/488.e75445ad.chunk.js": "/algarson/frontend/build/static/js/488.e75445ad.chunk.js",
+    "static/media/MenuKCProject.jpg": "/algarson/frontend/build/static/media/MenuKCProject.e8d8a09e9c9de9e820c9.jpg",
+    "static/media/kiboHome.png": "/algarson/frontend/build/static/media/kiboHome.5c05f8f6520380fcfdd4.png",
+    "static/media/kiboGallery.png": "/algarson/frontend/build/static/media/kiboGallery.b29d3049de7af8228721.png",
+    "static/media/kiboServices.png": "/algarson/frontend/build/static/media/kiboServices.60e86916c3c03e23a599.png",
+    "static/media/formicon.png": "/algarson/frontend/build/static/media/formicon.c79b078564c2be3a0fe0.png",
+    "static/media/firebase.png": "/algarson/frontend/build/static/media/firebase.5aa7cf22cd45ec6bbec2.png",
+    "static/media/LoginKCProject.png": "/algarson/frontend/build/static/media/LoginKCProject.e530b6dfabf9f4a14dc6.png",
+    "static/media/tmLogin.png": "/algarson/frontend/build/static/media/tmLogin.263cdaacba3cb451ab46.png",
+    "static/media/algarson_photo-removebg-preview.png": "/algarson/frontend/build/static/media/algarson_photo-removebg-preview.c4cd2aa0f229659d81de.png",
+    "static/media/adminKC.png": "/algarson/frontend/build/static/media/adminKC.090736e2ebce4f932e52.png",
+    "static/media/kcQR.jpg": "/algarson/frontend/build/static/media/kcQR.f387c31238fff6e2ae15.jpg",
+    "static/media/algarson_whitetext_NoBG.png": "/algarson/frontend/build/static/media/algarson_whitetext_NoBG.efa11ea65cdc67d48b0d.png",
+    "static/media/tmHome.png": "/algarson/frontend/build/static/media/tmHome.456318e53f48d4f33f96.png",
+    "static/media/tmDevice.jpg": "/algarson/frontend/build/static/media/tmDevice.f1af986b601b1fc3a17a.jpg",
+    "static/media/python.png": "/algarson/frontend/build/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/reactjs.png": "/algarson/frontend/build/static/media/reactjs.07d9e407d4e491c548d5.png",
+    "static/media/database.png": "/algarson/frontend/build/static/media/database.509b797c225dcdf62e68.png",
+    "static/media/github.png": "/algarson/frontend/build/static/media/github.2daf8617f4b92d421da4.png",
+    "static/media/figmaicon.png": "/algarson/frontend/build/static/media/figmaicon.72fbc535ebe253a5dbc4.png",
+    "static/media/css-3.png": "/algarson/frontend/build/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/js.png": "/algarson/frontend/build/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/algarson/frontend/build/index.html",
+    "main.167cb98a.css.map": "/algarson/frontend/build/static/css/main.167cb98a.css.map",
+    "main.8fe4b7b7.js.map": "/algarson/frontend/build/static/js/main.8fe4b7b7.js.map",
+    "488.e75445ad.chunk.js.map": "/algarson/frontend/build/static/js/488.e75445ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.167cb98a.css",
+    "static/js/main.8fe4b7b7.js"
+  ]
+}
