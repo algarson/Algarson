@@ -232,7 +232,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 /* SECTION 2 */
 #section-2{
     width: 100vw;
-    height: 85vh;
+    height: 135vh;
     /* border: 2px solid red; */
 }
 .project-container{
@@ -830,3 +830,33 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     }
 }
 
+@media (min-width:1024px) {
+    .left-text{
+        margin-left: 2em;
+        width: 350px;
+        text-align: justify;
+    }
+    .right-text{
+        width: 480px;
+        gap: 1em;
+    }
+    #section-2{
+        height: 160vh;
+        /* border: 2px solid red; */
+    }
+    #section-3{
+        height: 110vh;
+    }
+}
+
+@media (min-width:1440px) {
+    .title-desc{
+        justify-content: space-around;
+    }
+    .left-text{
+        width: 500px;
+    }
+    .right-text{
+        width: 700px;
+    }
+}
