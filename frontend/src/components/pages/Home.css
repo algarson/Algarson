@@ -809,7 +809,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     }
 
     .form-header h3{
-        font-size: small;
+        font-size: large;
     }
     .form{
         width: 85%;
