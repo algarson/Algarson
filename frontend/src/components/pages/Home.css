@@ -838,6 +838,113 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
         width: 50%;
     }
 }
+@media (min-width:429px) and (max-width:767px) {
+    .navbar a{
+        display: none;
+    }
+    .title-desc{ /*PARENT OF TEXT AND ICON ABOVE*/
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-text{ /*LEFT TEXT ABOVE*/
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        padding: 1em;
+    }
+    .right-text{ /*RIGHT TEXT ABOVE*/
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 5px;
+        height: 50%;
+        flex-wrap: wrap;
+    }
+    .right-text li{
+        width: 30px;
+        height: 30px;
+    }
+
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        display: none;
+    }
+    .shaped-div{
+        width: 100%;
+        justify-content: center;
+    }
+    .landpage-image{
+        height: 550px;
+        display: flex;
+    }
+    /* END OF SECTION 1 */
+    .project-container{
+        height: 90em;
+    }
+    .project-container h2{
+        padding-left: 1em;
+    }
+    .project-content{
+        justify-content: flex-start;
+    }
+
+    #section-3{
+        /* margin-top: 39em; */
+        height: 100vh;
+    }
+    .section3-content{
+        gap: 5em;
+        height: 80%;
+        width: 80%;
+        /* border: 1px solid green; */
+        padding: 0.7em;
+    }
+    .section3-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3-container h2{
+        padding-left: 1em;
+    }
+    /* FORM DISPLAY */
+    .sec3-form{
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+        padding: 0.5em;
+    }
+    
+    .left-image{
+        display: none;
+    }
+    .right-form{
+        width: 100%;
+    }
+
+    .form-header h3{
+        font-size: large;
+    }
+    .form{
+        width: 85%;
+    }
+
+    /* FOOTER */
+    .paa{
+        margin-top: 2em;
+    }
+    .footer-desc{
+        display: none;
+    }
+    .footer-logo{
+        width: 50%;
+    }
+    .footer-icons{
+        width: 50%;
+    }
+}
 @media (min-width:768px) and (max-width:1023px){
     .navbar-tags:first-child {
         margin-right: 45%; /* Push the first child to the left */
