@@ -232,7 +232,8 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 /* SECTION 2 */
 #section-2{
     width: 100vw;
-    height: 135vh;
+    min-height: 100vh;
+
     /* border: 2px solid red; */
 }
 .project-container{
@@ -252,7 +253,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 }
 .project-content{
     width: 100%;
-    height: 94%;
+    height: 86%;
     /* border: 2px solid yellowgreen; */
     display: flex;
     flex-direction: column;
@@ -263,16 +264,20 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 .project-card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  */
+    justify-content: center; 
     align-items: flex-start;
     width: 85%;
-    height: 100%;
+    height: 60%;
+    max-height: 50em;
     /* border: 2px solid brown; */
     gap: 20px;
     padding-top: 1em;
 }
+
 .project-cards{
-    width: 350px;
+    /* width: 350px; */
+    max-width: 350px;
     height: 360px;
     /* border: 2px solid yellow; */
     background-color: #242424;
@@ -504,7 +509,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 /* SECION 3 */
 #section-3{
     width: 100vw;
-    height: 89.5vh;
+    height: 95vh;
     color: var(--primary-dark-font-color);
     /* border: 2px solid green; */
 }
@@ -533,8 +538,8 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 }
 .sec3-form{
     /* border: 2px solid yellowgreen; */
-    width: 50em;
-    height: 25em;
+    width: 58%;
+    height: 78%;
     display: flex;
     flex-direction: row;
     background-color: var(--secondary-dark-color);
@@ -562,7 +567,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 }
 .form-header{
     width: 100%;
-    height: 5em;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -575,7 +580,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     flex-direction: column;
     /* border: 1px solid red; */
     width: 80%;
-    height: 20em;
+    height: 80%;
 }
 .form-group {
     display: flex;
@@ -653,7 +658,8 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 /* FOOTER */
 .paa{
     width: 100%;
-    height: 9.5em;
+    height: 20%;
+    margin-top: 1.1em;
     /* border: 2px solid red; */
     background-color: var(--secondary-dark-color);
 }
@@ -726,7 +732,7 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
 }
 
 /* RESPONSIVE */
-@media (min-width:320px ) and (max-width: 425px ){
+@media (min-width:320px ) and (max-width: 428px ){
     .navbar a{
         display: none;
     }
@@ -773,9 +779,12 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     .project-container h2{
         padding-left: 1em;
     }
+    .project-content{
+        justify-content: flex-start;
+    }
 
     #section-3{
-        margin-top: 59em;
+        /* margin-top: 39em; */
         height: 100vh;
     }
     .section3-content{
@@ -829,25 +838,118 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
         width: 50%;
     }
 }
+@media (min-width:768px) and (max-width:1023px){
+    .navbar-tags:first-child {
+        margin-right: 45%; /* Push the first child to the left */
+    }
+    .title-desc{ /*PARENT OF TEXT AND ICON ABOVE*/
+        justify-content: space-around;
+    }
+    .left-text{ /*LEFT TEXT ABOVE*/
+        width: 30%;
+        text-align: center;
+        margin-left: 0;
+        padding: 1em;
+        text-align: left;
+    }
+    .right-text{ /*RIGHT TEXT ABOVE*/
+        width: 45%;
+        justify-content: space-evenly;
+        gap: 10px;
+        height: 50%;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .shaped-div{
+        width: 90%;
+    }
+    .left-container{
+        margin-left: 1em;
+        width: 28%;
+    }
+    .right-container{
+        width: 27%;
+    }
+
+    /* SECTION 2 */
+    .project-container h2{
+        padding-left: 2em;
+    }
+    .project-card-container > * {
+        flex: 0 1 calc(33.333% - 20px); /* Set each card's width */
+        max-width: 300px; /* Adjust as needed */
+        min-width: 300px;
+    }
+    .filler-text{
+        display: none;
+    }
+    .project-card-container{
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    /*SECTION 3 */
+    #section-3{
+        padding-top: 2em;
+    }
+    .section3-container h2{
+        padding-left: 2em;
+    }
+    .section3-content{
+        height: 80%;
+    }
+    .form-header{
+        height: 16%;
+    }
+    .right-form h3{
+        font-size: 16px;
+    }
+    .sec3-form{
+        width: 80%;
+        height: 90%;
+    }
+
+
+}
 
 @media (min-width:1024px) {
-    .left-text{
-        margin-left: 2em;
-        width: 350px;
-        text-align: justify;
+
+        .left-text{
+            margin-left: 2em;
+            width: 350px;
+            text-align: justify;
+        }
+        .right-text{
+            width: 480px;
+            gap: 1em;
+        }
+        /* SECTION 2 */
+        .project-container h2{
+            padding-left: 5em;
+        }
+        .project-card-container{
+            justify-content: flex-start;
+            padding-left: 7.5%;
+        }
+
+        .filler-text{
+            display: none;
+        }
+
+        /* SECTION 3 */
+        #section-3{
+            height: 110vh;
+            padding-top: 2em;
+        }
+        .section3-container h2{
+            padding-left: 5em;
+        }
+        .sec3-form{
+            height: 90%;
+            width: 65%;
+        }
+
     }
-    .right-text{
-        width: 480px;
-        gap: 1em;
-    }
-    #section-2{
-        height: 160vh;
-        /* border: 2px solid red; */
-    }
-    #section-3{
-        height: 110vh;
-    }
-}
 
 @media (min-width:1440px) {
     .title-desc{
