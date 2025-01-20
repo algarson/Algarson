@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
+import { animate, motion } from "motion/react"
 
 // Resources
 import navbarLogo from '../images/algarson_whitetext_NoBG.png'
@@ -34,6 +35,8 @@ import './Home.css'
 
 const Home = () => {
   const [isQrModalOepn, setIsQrModalOpen] = useState(false);
+
+  <motion.div layout transition={{ duration: 0.3 }} />
 
   const openQrModal = () => {
     setIsQrModalOpen(true);
@@ -72,7 +75,6 @@ const Home = () => {
         }
       );
   };
-
 
   useEffect(() => {
     const sliders = document.querySelectorAll('.proj-image-slider');
@@ -136,9 +138,19 @@ const Home = () => {
         </nav>
         <section id='section-1'>
             <div className="section-1-content">
-              <div className="title-text">
+            <motion.div
+                  className="title-text"
+                  initial={{ x: '-100vw' }} // Start off-screen to the left
+                  animate={{ x: 0 }}       // Move to the center
+                  transition={{
+                    type: 'spring',        // Smooth spring effect
+                    stiffness: 120,        // Adjust the bounce
+                    damping: 20,           // Reduce overshoot
+                    duration: 0.8,         // Optional: control speed
+                  }}
+                >
                 <p>WEB <span>DEVELOPER</span></p>
-              </div>
+              </motion.div>
               <div className="title-desc">
                 <div className="left-text">
                   <p>Motivated and technology-driven IT student focused on <span>web design, web development,
@@ -157,7 +169,16 @@ const Home = () => {
 
                 </div>
               </div>
-              <div className="shaped-div">
+              <motion.div 
+                  className="shaped-div"
+                  initial={{ x: '-100vw' }} // Start off-screen to the left
+                  animate={{ x: 0 }}       // Move to the center
+                  transition={{
+                    type: 'spring',        // Smooth spring effect
+                    stiffness: 120,        // Adjust the bounce
+                    damping: 20,           // Reduce overshoot
+                    duration: 0.8,         // Optional: control speed
+                  }}>
                   <div className="left-container">
                     <div className="left-content">
                         <h1>
@@ -184,11 +205,21 @@ const Home = () => {
                           <p>Frontend Developer who focuses on writing clean, elegant and efficient code.</p>
                         </div>
                   </div>
-              </div>
+              </motion.div>
             </div>
         </section>
         <section id='section-2'>
-            <div className="project-container">
+            <motion.div 
+                initial={{ y: 100, opacity: 0 }} // Start off-screen below
+                whileInView={{ y: 0, opacity: 1 }} // Slide into view
+                transition={{
+                  type: 'spring',
+                  stiffness: 120,
+                  damping: 20,
+                  duration: 0.8,
+                }}
+                viewport={{ once: true, amount: 0.2 }} // Animate only once when 20% in view
+                className="project-container">
                 <h2>PROJECTS</h2>
               <div className="project-content">
                 <div className="project-card-container">
@@ -302,13 +333,22 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
         </section>
         <section id='section-3'>
             <div className="section3-container">
                     <h2>Get in Touch</h2>
                 <div className="section3-content">
-                  <div className="sec3-form">
+                  <motion.div
+                    initial={{ x: '-100vw' }} // Start off-screen to the left
+                    animate={{ x: 0 }}       // Move to the center
+                    transition={{
+                    type: 'spring',        // Smooth spring effect
+                    stiffness: 120,        // Adjust the bounce
+                    damping: 20,           // Reduce overshoot
+                    duration: 0.8,         // Optional: control speed
+                    }}
+                    className="sec3-form">
                     <div className="left-image">
                       <img src={formicon} alt="form-icon" />
                     </div>
@@ -353,7 +393,7 @@ const Home = () => {
                               </div>
                         </form>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
                 <footer className='paa'>
                     <div className="footer-container">
