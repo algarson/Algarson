@@ -338,17 +338,18 @@ const Home = () => {
         <section id='section-3'>
             <div className="section3-container">
                     <h2>Get in Touch</h2>
-                <div className="section3-content">
-                  <motion.div
-                    initial={{ x: '-100vw' }} // Start off-screen to the left
-                    animate={{ x: 0 }}       // Move to the center
-                    transition={{
-                    type: 'spring',        // Smooth spring effect
-                    stiffness: 120,        // Adjust the bounce
-                    damping: 20,           // Reduce overshoot
-                    duration: 0.8,         // Optional: control speed
-                    }}
-                    className="sec3-form">
+                <motion.div 
+                  className="section3-content"
+                  initial={{ y: 100, opacity: 0 }} // Start off-screen below
+                  whileInView={{ y: 0, opacity: 1 }} // Slide into view
+                  transition={{
+                  type: 'spring',
+                  stiffness: 120,
+                  damping: 20,
+                  duration: 0.8,
+                  }}
+                  viewport={{ once: true, amount: 0.2 }}>
+                  <div className="sec3-form">
                     <div className="left-image">
                       <img src={formicon} alt="form-icon" />
                     </div>
@@ -393,8 +394,8 @@ const Home = () => {
                               </div>
                         </form>
                     </div>
-                  </motion.div>
-                </div>
+                  </div>
+                </motion.div>
                 <footer className='paa'>
                     <div className="footer-container">
                       <div className="footer-logo">
