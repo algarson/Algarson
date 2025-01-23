@@ -319,6 +319,9 @@ const Home = () => {
                         <div className="lang">
                           <p>JavaScript</p>
                         </div>
+                        <div className="lang">
+                          <p>ReactJS</p>
+                        </div>
                       </div>
                       <div className="proj-btn1">
                         <div className="proj-status">
@@ -335,9 +338,14 @@ const Home = () => {
               </div>
             </motion.div>
         </section>
+        {/* <section id='section-wid'>
+            <div className="wid-container">
+
+            </div>
+        </section> */}
         <section id='section-3'>
             <div className="section3-container">
-                    <h2>Get in Touch</h2>
+                    <h2>GET IN TOUCH</h2>
                 <motion.div 
                   className="section3-content"
                   initial={{ y: 100, opacity: 0 }} // Start off-screen below
@@ -407,10 +415,18 @@ const Home = () => {
                           </div>
                       </div>
                       <div className="footer-icons">
-                        <div className="footer-icons-container">
-                            <img src={githubicon} alt="github-icon" />
-                            <img src={linkedinicon} alt="linkedin-icon" />
-                        </div>
+                          <div className="contact-footer">
+                            <div className="contact-icon">
+                              <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div className="email">
+                              <p>Daveeperez@gmail.com</p>
+                            </div>
+                          </div>
+                          <div className="footer-icons-container">
+                              <a href="https://github.com/algarson" target='_blank' rel="noreferrer"><img src={githubicon} alt="github-icon" /></a>
+                              <img src={linkedinicon} alt="linkedin-icon" />
+                          </div>
                       </div>
                     </div>
                 </footer>
