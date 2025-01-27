@@ -522,6 +522,58 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     height: 100vh;
     border: 2px solid rebeccapurple;
 }
+.wid-container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wid-content{
+    width: 95%;
+    height: 95%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.wid-profile{
+    width: 100%;
+    height: 40%;
+    border: 2px solid skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wid-shape{
+    margin-top: -3em;
+    border: 2px solid brown;
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    background: rgb(82,23,121);
+    background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 100%);
+}
+.wid-shape img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wid-cards-container{
+    width: 100%;
+    height: 60%;
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.wid-cards{
+    width: 100%;
+    height: 25%;
+    border: 2px solid yellow;
+}
 
 
 /* SECION 3 */
@@ -1130,5 +1182,129 @@ background: linear-gradient(90deg, rgba(82,23,121,1) 45%, rgba(255,255,255,1) 10
     }
     .right-text{
         width: 700px;
+    }
+}
+
+@media (min-width:2560px) {
+    .navbar{
+        height: 15%;
+    }
+    .navbar-tags span{
+        width: 300px;
+        height: 300px;
+    }
+    .navbar-tags:first-child {
+        margin-right: 50%;
+    }
+    .navbar a{
+        font-size: 32px;
+    }
+    .title-desc{
+        justify-content: space-around;
+        gap: 0;
+    }
+    .left-text{
+        width: 800px;
+        height: 200px;
+        font-size: 1vw;
+    }
+    .right-text{
+        width: 1100px;
+        height: 150px;
+        gap: 2em;
+    }
+    .right-text li{
+        width: 100px;
+        height: 100px;
+    }
+    .landpage-image{
+        height: 1100px;
+        width: 600px;
+    }
+    .left-container{
+        font-size: 2em;
+    }
+    .right-container{
+        font-size: 2em;
+    }
+    .project-container h2{
+        font-size: 2.5em;
+    }
+    .project-card-container > * {
+        max-width: 600px; /* Adjust as needed */
+        min-width: 600px;
+    }
+    .project-cards{
+        max-width: 600px;
+        height: 600px;
+    }
+    .proj-text{
+        padding: 13px;
+    }
+    .project-cards p{
+        font-size: 1.5em;
+    }
+    .proj-lang{
+        padding: 4px;
+    }
+    .proj-lang .lang p{
+        font-size: 1.3em;
+    }
+    .lang{
+        width: 160px;
+        height: 50px;
+        border-radius: 30px;
+    }
+
+
+
+    .qr-btn{
+        width: 80px;
+    }
+    .qr-btn span{
+        font-size: x-large;
+    }
+    .btn{
+        width: 160px;
+        font-size: large;
+    }
+
+    .section3-container h2{
+        font-size: 2.5em;
+    }
+    .form-header{
+        font-size: 2em;
+    }
+    .form{
+        font-size: 2em;
+    }
+    .form-group ::placeholder{
+        font-size: 2em;
+    }
+    .form-group input{
+        height: 7em;
+    }
+    .message-input{
+        height: 200px;
+    }
+    .submit-button{
+        padding-top: 95px;
+        padding-bottom: 0;
+    }
+    .submit-button button{
+        height: 80px;
+        font-size: 0.8em;
+        border-radius: 20px;
+    }
+
+    .footer-desc-content p{
+        font-size: 1.7em;
+    }
+    .footer-icons, .footer-icons span{
+        font-size: 1.7em;
+    }
+    .footer-icons-container img{
+        height: 50px;
+        width: 50px;
     }
 }

@@ -18,6 +18,7 @@ import formicon from '../images/formicon.png'
 import githubicon from '../images/github.png'
 import linkedinicon from '../images/linkedin.png'
 import kcQR from '../images/kcQR.jpg'
+import widImage from '../images/widprofile.png'
 // Project Images
 import kapelogin from '../images/LoginKCProject.png'
 import kapeMenu from '../images/MenuKCProject.jpg'
@@ -340,7 +341,22 @@ const Home = () => {
         </section>
         {/* <section id='section-wid'>
             <div className="wid-container">
-
+                <div className="wid-content">
+                  <div className="wid-profile">
+                      <div className="wid-shape">
+                        <img src={widImage} alt="WidImage" />
+                      </div>
+                      <div className="profile-text">
+                        <p></p>
+                      </div>
+                  </div>
+                  <div className="wid-cards-container">
+                    <div className="wid-cards">1</div>
+                    <div className="wid-cards">2</div>
+                    <div className="wid-cards">3</div>
+                    <div className="wid-cards">4</div>
+                  </div>
+                </div>
             </div>
         </section> */}
         <section id='section-3'>
@@ -411,7 +427,10 @@ const Home = () => {
                       </div>
                       <div className="footer-desc">
                           <div className="footer-desc-content">
-                            <p>Designed in <span>Figma</span> and coded in <span>Visual Studio Code</span> by truly yours. Built with <span>ReactJS</span>, Deployed with <span>Vercel</span>.</p>
+                            <p>Designed in <span>Figma</span> and coded in <span>Visual Studio Code</span> by truly yours. Built with <span>ReactJS</span>, Deployed with <span>Vercel</span>.
+                            
+                            <br></br>
+                            <br></br>© 2025 Davizar Perez. All rights reserved.</p>
                           </div>
                       </div>
                       <div className="footer-icons">
