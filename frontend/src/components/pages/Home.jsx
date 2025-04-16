@@ -8,8 +8,8 @@ import navbarLogo from '../images/algarson_whitetext_NoBG.png'
 import landpageProfile from '../images/algarson_photo-removebg-preview.png'
 import jsicon from '../icons/js.png'
 import pythonicon from '../icons/python.png'
-import htmlicon from '../icons/html-5.png'
-import cssicon from '../icons/css-3.png'
+import htmlcssicon from '../icons/HtmlCss.png'
+import tailwindicon from '../icons/Tailwind.png'
 import mysqlicon from '../icons/database.png'
 import reactjsicon from '../icons/reactjs.png'
 import firebaseicon from '../icons/firebase.png'
@@ -162,8 +162,8 @@ const Home = () => {
                   <li className='lang-icons'><img src={jsicon} alt="" /></li>
                   <li className='lang-icons'><img src={pythonicon} alt="" /></li>
                   <li className='lang-icons'><img src={reactjsicon} alt="" /></li>
-                  <li className='lang-icons'><img src={htmlicon} alt="" /></li>
-                  <li className='lang-icons'><img src={cssicon} alt="" /></li>
+                  <li className='lang-icons'><img src={htmlcssicon} alt="" /></li>
+                  <li className='lang-icons'><img src={tailwindicon} alt="" /></li>
                   <li className='lang-icons'><img src={mysqlicon} alt="" /></li>
                   <li className='lang-icons'><img src={firebaseicon} alt="" /></li>
                   <li className='lang-icons'><img src={figmaicon} alt="" /></li>
