@@ -6,6 +6,7 @@ import { animate, motion } from "motion/react"
 // Resources
 import navbarLogo from '../images/algarson_whitetext_NoBG.png'
 import landpageProfile from '../images/algarson_photo-removebg-preview.png'
+import nodeicon from '../icons/Nodejs.png'
 import jsicon from '../icons/js.png'
 import pythonicon from '../icons/python.png'
 import htmlcssicon from '../icons/HtmlCss.png'
@@ -160,6 +161,7 @@ const Home = () => {
                 </div>
                 <div className="right-text">
                   <li className='lang-icons'><img src={jsicon} alt="" /></li>
+                  <li className='lang-icons'><img src={nodeicon} alt="" /></li>
                   <li className='lang-icons'><img src={pythonicon} alt="" /></li>
                   <li className='lang-icons'><img src={reactjsicon} alt="" /></li>
                   <li className='lang-icons'><img src={htmlcssicon} alt="" /></li>
@@ -203,7 +205,7 @@ const Home = () => {
                   <div className="right-container">
                         <h1>&lt;Coder&gt;</h1>
                         <div className="left-context">
-                          <p>Frontend Developer who focuses on writing clean, elegant and efficient code.</p>
+                          <p>Full Stack Developer who focuses on writing clean, elegant and efficient code.</p>
                         </div>
                   </div>
               </motion.div>
