@@ -30,6 +30,10 @@ import tmdevice from '../images/tmDevice.jpg'
 import kibohome from '../images/kiboHome.png'
 import kiboservice from '../images/kiboServices.png'
 import kibogallery from '../images/kiboGallery.png'
+import Devcab1 from '../images/DevcabinHome.png'
+import Devcab2 from '../images/DevcabinLanding.png'
+import Devcab3 from '../images/DevcabinForm.png'
+
 
 
 // Navigations
@@ -100,7 +104,24 @@ const Home = () => {
 
     sliders1.forEach((slider1) => {
       let index = 0;
-      const images1 = slider1.querySelectorAll('.proj-image1');
+      const images = slider1.querySelectorAll('.proj-image1');
+      const totalImages = images.length;
+
+      setInterval(() => {
+        images.forEach((img, i) => {
+          img.style.transform = `translateX(-${index * 100}%)`;
+        });
+        index = (index + 1) % totalImages;
+      }, 2500); 
+    });
+  }, []);
+
+  useEffect(() => {
+    const sliders2 = document.querySelectorAll('.proj-image-slider2');
+
+    sliders2.forEach((slider2) => {
+      let index = 0;
+      const images1 = slider2.querySelectorAll('.proj-image2');
       const totalImages1 = images1.length;
 
       setInterval(() => {
@@ -113,11 +134,11 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const sliders2 = document.querySelectorAll('.proj-image-slider2');
+    const sliders3 = document.querySelectorAll('.proj-image-slider3');
 
-    sliders2.forEach((slider2) => {
+    sliders3.forEach((slider3) => {
       let index = 0;
-      const images2 = slider2.querySelectorAll('.proj-image2');
+      const images2 = slider3.querySelectorAll('.proj-image3');
       const totalImages2 = images2.length;
 
       setInterval(() => {
@@ -238,16 +259,16 @@ const Home = () => {
                       </div>
                       <div className="proj-lang">
                         <div className="lang">
-                          <p>HTML</p>
-                        </div>
-                        <div className="lang">
-                          <p>CSS</p>
+                          <p>HTML/CSS</p>
                         </div>
                         <div className="lang">
                           <p>PHP</p>
                         </div>
                         <div className="lang">
                           <p>JavaScript</p>
+                        </div>
+                        <div className="lang">
+                          <p>MySQL</p>
                         </div>
                       </div>
                       <div className="proj-btn">
@@ -270,8 +291,40 @@ const Home = () => {
                           )}
                     </div>
                   </div>
-                  <div className="project-cards">
+                <div className="project-cards">
                     <div className="proj-image-slider1">
+                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab1})` }}></div>
+                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab2})` }}></div>
+                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab3})` }}></div>
+                    </div>
+                    <div className="proj-details">
+                      <div className="proj-text">
+                        <p><span>Devcabin</span>, a System Application Library for E-Konek Pilipinas Inc. </p>
+                      </div>
+                      <div className="proj-lang">
+                        <div className="lang">
+                          <p>ReactJS</p>
+                        </div>
+                        <div className="lang">
+                          <p>NodeJS</p>
+                        </div>
+                        <div className="lang">
+                          <p>Tailwind</p>
+                        </div>
+                        <div className="lang">
+                          <p>MySQL</p>
+                        </div>
+                      </div>
+                      <div className="proj-btn1">
+                        <div className="proj-status">
+                          <p>In Progress</p>
+                        </div>
+                        <button className='btn'>Unavailable</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-cards">
+                    <div className="proj-image-slider2">
                       <div className="proj-image1" style={{ backgroundImage: `url(${tmlogin})` }}></div>
                       <div className="proj-image1" style={{ backgroundImage: `url(${tmhome})` }}></div>
                       <div className="proj-image1" style={{ backgroundImage: `url(${tmdevice})` }}></div>
@@ -282,16 +335,16 @@ const Home = () => {
                       </div>
                       <div className="proj-lang">
                         <div className="lang">
-                            <p>HTML</p>
-                          </div>
-                          <div className="lang">
-                            <p>CSS</p>
+                            <p>HTML/CSS</p>
                           </div>
                           <div className="lang">
                             <p>ReactJS</p>
                           </div>
                           <div className="lang">
-                            <p>Node.Js</p>
+                            <p>NodeJS</p>
+                          </div>
+                          <div className="lang">
+                            <p>Firebase</p>
                           </div>
                       </div>
                       <div className="proj-btn1">
@@ -304,9 +357,9 @@ const Home = () => {
                   </div>
                   <div className="project-cards">
                     <div className="proj-image-slider2">
-                      <div className="proj-image2" style={{ backgroundImage: `url(${kibohome})` }}></div>
-                      <div className="proj-image2" style={{ backgroundImage: `url(${kiboservice})` }}></div>
-                      <div className="proj-image2" style={{ backgroundImage: `url(${kibogallery})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${kibohome})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${kiboservice})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${kibogallery})` }}></div>
                     </div>
                     <div className="proj-details">
                       <div className="proj-text">
@@ -314,21 +367,21 @@ const Home = () => {
                       </div>
                       <div className="proj-lang">
                       <div className="lang">
-                          <p>HTML</p>
-                        </div>
-                        <div className="lang">
-                          <p>CSS</p>
-                        </div>
-                        <div className="lang">
-                          <p>JavaScript</p>
+                          <p>HTML/CSS</p>
                         </div>
                         <div className="lang">
                           <p>ReactJS</p>
                         </div>
+                        <div className="lang">
+                          <p>Node</p>
+                        </div>
+                        <div className="lang">
+                          <p>MySQL</p>
+                        </div>
                       </div>
                       <div className="proj-btn1">
                         <div className="proj-status">
-                          <p>In Progress</p>
+                          {/* <p>In Progress</p> */}
                         </div>
                         <button className='btn'>Unavailable</button>
                       </div>
