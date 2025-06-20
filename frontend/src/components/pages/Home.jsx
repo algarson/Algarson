@@ -121,14 +121,14 @@ const Home = () => {
 
     sliders2.forEach((slider2) => {
       let index = 0;
-      const images1 = slider2.querySelectorAll('.proj-image2');
-      const totalImages1 = images1.length;
+      const images = slider2.querySelectorAll('.proj-image2');
+      const totalImages = images.length;
 
       setInterval(() => {
-        images1.forEach((img, i) => {
+        images.forEach((img, i) => {
           img.style.transform = `translateX(-${index * 100}%)`;
         });
-        index = (index + 1) % totalImages1;
+        index = (index + 1) % totalImages;
       }, 3000); // Change slide every 3 seconds
     });
   }, []);
@@ -138,14 +138,14 @@ const Home = () => {
 
     sliders3.forEach((slider3) => {
       let index = 0;
-      const images2 = slider3.querySelectorAll('.proj-image3');
-      const totalImages2 = images2.length;
+      const images = slider3.querySelectorAll('.proj-image3');
+      const totalImages = images.length;
 
       setInterval(() => {
-        images2.forEach((img, i) => {
+        images.forEach((img, i) => {
           img.style.transform = `translateX(-${index * 100}%)`;
         });
-        index = (index + 1) % totalImages2;
+        index = (index + 1) % totalImages;
       }, 3800); // Change slide every 3 seconds
     });
   }, []);
@@ -293,9 +293,9 @@ const Home = () => {
                   </div>
                 <div className="project-cards">
                     <div className="proj-image-slider1">
-                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab1})` }}></div>
-                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab2})` }}></div>
-                      <div className="proj-image" style={{ backgroundImage: `url(${Devcab3})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${Devcab1})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${Devcab2})` }}></div>
+                      <div className="proj-image1" style={{ backgroundImage: `url(${Devcab3})` }}></div>
                     </div>
                     <div className="proj-details">
                       <div className="proj-text">
@@ -325,9 +325,9 @@ const Home = () => {
                   </div>
                   <div className="project-cards">
                     <div className="proj-image-slider2">
-                      <div className="proj-image1" style={{ backgroundImage: `url(${tmlogin})` }}></div>
-                      <div className="proj-image1" style={{ backgroundImage: `url(${tmhome})` }}></div>
-                      <div className="proj-image1" style={{ backgroundImage: `url(${tmdevice})` }}></div>
+                      <div className="proj-image2" style={{ backgroundImage: `url(${tmlogin})` }}></div>
+                      <div className="proj-image2" style={{ backgroundImage: `url(${tmhome})` }}></div>
+                      <div className="proj-image2" style={{ backgroundImage: `url(${tmdevice})` }}></div>
                     </div>
                     <div className="proj-details">
                       <div className="proj-text">
@@ -356,10 +356,10 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="project-cards">
-                    <div className="proj-image-slider2">
-                      <div className="proj-image1" style={{ backgroundImage: `url(${kibohome})` }}></div>
-                      <div className="proj-image1" style={{ backgroundImage: `url(${kiboservice})` }}></div>
-                      <div className="proj-image1" style={{ backgroundImage: `url(${kibogallery})` }}></div>
+                    <div className="proj-image-slider3">
+                      <div className="proj-image3" style={{ backgroundImage: `url(${kibohome})` }}></div>
+                      <div className="proj-image3" style={{ backgroundImage: `url(${kiboservice})` }}></div>
+                      <div className="proj-image3" style={{ backgroundImage: `url(${kibogallery})` }}></div>
                     </div>
                     <div className="proj-details">
                       <div className="proj-text">
